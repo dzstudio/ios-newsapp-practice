@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarketViewController">
+            <connections>
+                <outlet property="navigationBar" destination="Z05-1Y-S8q" id="k2E-y6-lgD"/>
+                <outlet property="pagerScrollView" destination="V2g-SE-9qj" id="1gw-cz-Iei"/>
+                <outlet property="tabBarControl" destination="dGK-Ma-BRT" id="2gf-Lq-YsT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-1Y-S8q" userLabel="Screen Header" customClass="CustomNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.79215686269999996" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Z05-1Y-S8q" secondAttribute="height" multiplier="5:1" id="zpU-IY-Abc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGK-Ma-BRT" userLabel="Tab bar" customClass="TabBarControl">
+                    <rect key="frame" x="0.0" y="75" width="375" height="33"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dGK-Ma-BRT" secondAttribute="height" multiplier="125:11" id="4R2-F1-MaM"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-SE-9qj">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <animations/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5bb-xn-XRz"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z05-1Y-S8q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cu3-Sh-AeG"/>
+                <constraint firstItem="V2g-SE-9qj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HHI-Kv-2oC"/>
+                <constraint firstAttribute="trailing" secondItem="dGK-Ma-BRT" secondAttribute="trailing" id="J7T-d4-Ndi"/>
+                <constraint firstItem="V2g-SE-9qj" firstAttribute="top" secondItem="dGK-Ma-BRT" secondAttribute="bottom" id="LvG-nb-xrw"/>
+                <constraint firstAttribute="trailing" secondItem="V2g-SE-9qj" secondAttribute="trailing" id="NJI-wa-JvZ"/>
+                <constraint firstItem="dGK-Ma-BRT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="THq-Bx-KCK"/>
+                <constraint firstAttribute="bottom" secondItem="V2g-SE-9qj" secondAttribute="bottom" id="Y8W-Hf-QS6"/>
+                <constraint firstItem="Z05-1Y-S8q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bhD-JR-uCu"/>
+                <constraint firstItem="dGK-Ma-BRT" firstAttribute="top" secondItem="Z05-1Y-S8q" secondAttribute="bottom" id="i3B-1N-l6v"/>
+                <constraint firstAttribute="trailing" secondItem="Z05-1Y-S8q" secondAttribute="trailing" id="oem-FJ-b8c"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="383" y="235"/>
+        </view>
+    </objects>
+</document>

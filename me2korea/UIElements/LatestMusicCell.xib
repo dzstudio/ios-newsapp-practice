@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="LatestMusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-5M-r7d">
+                        <rect key="frame" x="12" y="7" width="62" height="62"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Zcs-5M-r7d" secondAttribute="height" multiplier="1:1" id="evo-M5-i6B"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Music Title" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-gP-ZBw">
+                        <rect key="frame" x="87" y="0.0" width="223" height="67"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIY-6J-RIx">
+                        <rect key="frame" x="270" y="52" width="40" height="16"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fq-Kp-s7R">
+                                <rect key="frame" x="1" y="1" width="38" height="14"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="热门" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldd-b3-bXE">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="14"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.01176470588" green="0.77647058820000003" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.01176470588" green="0.77647058820000003" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Zsn-Nc-Gnv"/>
+                            <constraint firstAttribute="height" constant="16" id="gZO-rq-iHL"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHD-hc-gw1" userLabel="Seperator">
+                        <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ck8-dt-GTP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="OIY-6J-RIx" secondAttribute="bottom" constant="-1" id="1yz-ZB-jt4"/>
+                    <constraint firstItem="IK3-gP-ZBw" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Bm5-3H-cel"/>
+                    <constraint firstItem="zHD-hc-gw1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="DDG-y0-ZVR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IK3-gP-ZBw" secondAttribute="trailing" constant="2" id="Gt5-tD-ziH"/>
+                    <constraint firstItem="IK3-gP-ZBw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="JBs-Bi-vPJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OIY-6J-RIx" secondAttribute="trailing" constant="2" id="Qbo-XZ-anT"/>
+                    <constraint firstItem="IK3-gP-ZBw" firstAttribute="leading" secondItem="Zcs-5M-r7d" secondAttribute="trailing" constant="13" id="TNI-EX-Hrm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zHD-hc-gw1" secondAttribute="trailing" constant="-8" id="aYG-pd-PR4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zcs-5M-r7d" secondAttribute="bottom" constant="-2" id="cLK-ZG-RK6"/>
+                    <constraint firstItem="Zcs-5M-r7d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="fu4-Fx-b4s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zHD-hc-gw1" secondAttribute="bottom" constant="-8" id="jDU-rL-USd"/>
+                    <constraint firstItem="Zcs-5M-r7d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="v67-gN-FvU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imgMusic" destination="Zcs-5M-r7d" id="zUv-xy-IQf"/>
+                <outlet property="tipHotMusic" destination="OIY-6J-RIx" id="DoH-jy-onh"/>
+                <outlet property="txtMusicTitle" destination="IK3-gP-ZBw" id="tun-PR-Y3k"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

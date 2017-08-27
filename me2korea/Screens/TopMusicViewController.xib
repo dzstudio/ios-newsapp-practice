@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMusicViewController">
+            <connections>
+                <outlet property="btnNextArrow" destination="x2T-Cu-myQ" id="X7c-Nb-FZg"/>
+                <outlet property="btnPrevArrow" destination="gRi-Gz-2zy" id="WAf-Me-k22"/>
+                <outlet property="navigationBar" destination="Qlc-b5-Kxj" id="CwR-6D-nff"/>
+                <outlet property="pagerScrollView" destination="RBB-zX-bBq" id="dHF-Mu-FWF"/>
+                <outlet property="subPageTitle" destination="XUy-4k-T9p" id="XNf-OY-ogX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlc-b5-Kxj" userLabel="Screen Header" customClass="CustomNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.792156862745098" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Qlc-b5-Kxj" secondAttribute="height" multiplier="75:15" id="pPF-1g-28h"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7g-0X-m0E" userLabel="Page Title View">
+                    <rect key="frame" x="0.0" y="75" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUy-4k-T9p">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.74901960784313726" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-Gz-2zy" userLabel="Prev">
+                            <rect key="frame" x="10" y="5" width="7" height="22"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gRi-Gz-2zy" secondAttribute="height" multiplier="7:22" id="S4t-1v-mlH"/>
+                            </constraints>
+                            <state key="normal" image="music_blue_arrow_left.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onTapLeftArrow:" destination="-1" eventType="touchUpInside" id="cG3-up-9dt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-Cu-myQ" userLabel="Next">
+                            <rect key="frame" x="358" y="5" width="7" height="22"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="x2T-Cu-myQ" secondAttribute="height" multiplier="7:22" id="iLd-wV-HiO"/>
+                            </constraints>
+                            <state key="normal" image="music_blue_arrow_right.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onTapRightArrow:" destination="-1" eventType="touchUpInside" id="iuO-u6-f8q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gRi-Gz-2zy" firstAttribute="top" secondItem="h7g-0X-m0E" secondAttribute="top" constant="5" id="2mu-fM-9wy"/>
+                        <constraint firstAttribute="trailing" secondItem="x2T-Cu-myQ" secondAttribute="trailing" constant="10" id="9Yq-br-L0u"/>
+                        <constraint firstAttribute="bottom" secondItem="gRi-Gz-2zy" secondAttribute="bottom" constant="3" id="MOs-QV-gI0"/>
+                        <constraint firstAttribute="bottom" secondItem="x2T-Cu-myQ" secondAttribute="bottom" constant="3" id="U20-6g-ugg"/>
+                        <constraint firstItem="x2T-Cu-myQ" firstAttribute="top" secondItem="h7g-0X-m0E" secondAttribute="top" constant="5" id="d5E-SO-P6S"/>
+                        <constraint firstItem="XUy-4k-T9p" firstAttribute="leading" secondItem="h7g-0X-m0E" secondAttribute="leading" id="dMM-qK-qPc"/>
+                        <constraint firstAttribute="bottom" secondItem="XUy-4k-T9p" secondAttribute="bottom" id="jP8-Bc-IIa"/>
+                        <constraint firstItem="XUy-4k-T9p" firstAttribute="top" secondItem="h7g-0X-m0E" secondAttribute="top" id="lb2-4r-LnC"/>
+                        <constraint firstItem="gRi-Gz-2zy" firstAttribute="leading" secondItem="h7g-0X-m0E" secondAttribute="leading" constant="10" id="rTM-3i-Dog"/>
+                        <constraint firstAttribute="width" secondItem="h7g-0X-m0E" secondAttribute="height" multiplier="25:2" id="w6G-xs-XF7"/>
+                        <constraint firstAttribute="trailing" secondItem="XUy-4k-T9p" secondAttribute="trailing" id="yAy-0R-rKw"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-zX-bBq">
+                    <rect key="frame" x="0.0" y="105" width="375" height="562"/>
+                    <animations/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Hd1-PO-Aiv"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RBB-zX-bBq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2ef-FF-qUY"/>
+                <constraint firstItem="h7g-0X-m0E" firstAttribute="top" secondItem="Qlc-b5-Kxj" secondAttribute="bottom" id="J1T-Vu-GjR"/>
+                <constraint firstAttribute="bottom" secondItem="RBB-zX-bBq" secondAttribute="bottom" id="Jlr-6M-c5U"/>
+                <constraint firstItem="Qlc-b5-Kxj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YdO-Ik-eCh"/>
+                <constraint firstItem="RBB-zX-bBq" firstAttribute="top" secondItem="h7g-0X-m0E" secondAttribute="bottom" id="c8p-za-sbN"/>
+                <constraint firstItem="h7g-0X-m0E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gIG-xG-WgR"/>
+                <constraint firstItem="Qlc-b5-Kxj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jjx-hc-HIN"/>
+                <constraint firstAttribute="trailing" secondItem="RBB-zX-bBq" secondAttribute="trailing" id="l4h-mr-hqo"/>
+                <constraint firstAttribute="trailing" secondItem="Qlc-b5-Kxj" secondAttribute="trailing" id="mHM-6K-uVZ"/>
+                <constraint firstAttribute="trailing" secondItem="h7g-0X-m0E" secondAttribute="trailing" id="utt-Gs-k00"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="454.5" y="356.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="music_blue_arrow_left.png" width="7" height="11"/>
+        <image name="music_blue_arrow_right.png" width="7" height="11"/>
+    </resources>
+</document>

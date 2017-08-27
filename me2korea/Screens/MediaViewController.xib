@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MediaViewController">
+            <connections>
+                <outlet property="navigationBar" destination="HTl-fT-ekD" id="I2h-2L-oJ5"/>
+                <outlet property="pagerScrollView" destination="6z3-oM-yeP" id="Gv9-0o-Z6r"/>
+                <outlet property="tabBarControl" destination="Nyi-PC-OPX" id="xmU-9d-npT"/>
+                <outlet property="view" destination="A3c-ve-1RU" id="6j2-od-4j8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A3c-ve-1RU">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-fT-ekD" userLabel="Screen Header" customClass="CustomNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <color key="backgroundColor" red="0.0" green="0.79215686269999996" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HTl-fT-ekD" secondAttribute="height" multiplier="5:1" id="moJ-Vd-sbY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyi-PC-OPX" userLabel="Tab bar" customClass="TabBarControl">
+                    <rect key="frame" x="0.0" y="75" width="375" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Nyi-PC-OPX" secondAttribute="height" multiplier="125:11" id="GHq-hj-pT5"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z3-oM-yeP">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Z6h-w0-Wsy"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6z3-oM-yeP" firstAttribute="leading" secondItem="A3c-ve-1RU" secondAttribute="leading" id="0XS-p9-Chz"/>
+                <constraint firstItem="HTl-fT-ekD" firstAttribute="top" secondItem="A3c-ve-1RU" secondAttribute="top" id="HBW-S2-Ush"/>
+                <constraint firstItem="Nyi-PC-OPX" firstAttribute="leading" secondItem="A3c-ve-1RU" secondAttribute="leading" id="L3A-gW-gXE"/>
+                <constraint firstItem="Nyi-PC-OPX" firstAttribute="top" secondItem="HTl-fT-ekD" secondAttribute="bottom" id="MVt-Ul-C3V"/>
+                <constraint firstAttribute="trailing" secondItem="6z3-oM-yeP" secondAttribute="trailing" id="R1h-qX-VAe"/>
+                <constraint firstItem="HTl-fT-ekD" firstAttribute="leading" secondItem="A3c-ve-1RU" secondAttribute="leading" id="n7A-KL-32a"/>
+                <constraint firstAttribute="trailing" secondItem="Nyi-PC-OPX" secondAttribute="trailing" id="q9x-hF-NBE"/>
+                <constraint firstAttribute="trailing" secondItem="HTl-fT-ekD" secondAttribute="trailing" id="txI-zg-4ZO"/>
+                <constraint firstAttribute="bottom" secondItem="6z3-oM-yeP" secondAttribute="bottom" id="ueJ-xl-tgD"/>
+                <constraint firstItem="6z3-oM-yeP" firstAttribute="top" secondItem="Nyi-PC-OPX" secondAttribute="bottom" id="wne-SC-PXV"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="383" y="235"/>
+        </view>
+    </objects>
+</document>

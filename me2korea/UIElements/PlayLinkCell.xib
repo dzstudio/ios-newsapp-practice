@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayLinkCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-9V-u5l">
+                        <rect key="frame" x="4" y="4" width="41" height="42"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" backgroundImage="btn_green_border.png">
+                            <color key="titleColor" red="0.32156862745098036" green="0.75686274509803919" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="btn_green_bg.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WVy-9V-u5l" secondAttribute="trailing" multiplier="1:0.84" constant="-4" id="2m3-m8-zPZ"/>
+                <constraint firstItem="WVy-9V-u5l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="IpH-zg-aCK"/>
+                <constraint firstItem="WVy-9V-u5l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="KBE-ZN-mAn"/>
+                <constraint firstAttribute="bottom" secondItem="WVy-9V-u5l" secondAttribute="bottom" constant="4" id="tD9-H6-Zzx"/>
+            </constraints>
+            <connections>
+                <outlet property="playButton" destination="WVy-9V-u5l" id="WLL-Jc-0Q2"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_green_bg.png" width="48" height="36"/>
+        <image name="btn_green_border.png" width="48" height="36"/>
+    </resources>
+</document>

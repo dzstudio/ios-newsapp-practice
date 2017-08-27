@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar">
+            <connections>
+                <outlet property="btnBack" destination="RWB-f7-0Rg" id="dsh-6J-4Sz"/>
+                <outlet property="btnMenu" destination="YBV-da-HdZ" id="Pce-9b-IzS"/>
+                <outlet property="btnShare" destination="bNI-OP-Wvt" id="1Qy-GI-vbP"/>
+                <outlet property="btnSwitch" destination="LP0-41-WUo" id="O8q-bq-jgF"/>
+                <outlet property="labelTitleView" destination="Cxv-JH-dOM" id="3cB-6c-Hsb"/>
+                <outlet property="navigationView" destination="iN0-l3-epB" id="Zv8-eZ-hNk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="韩流" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000027" translatesAutoresizingMaskIntoConstraints="NO" id="Cxv-JH-dOM">
+                    <rect key="frame" x="46" y="20" width="283" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-41-WUo" userLabel="btnSwitch">
+                    <rect key="frame" x="330" y="31" width="40" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="aCK-HO-ylV"/>
+                        <constraint firstAttribute="width" constant="40" id="leb-Hm-xwe"/>
+                    </constraints>
+                    <state key="normal" image="mall_right_btn.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-da-HdZ">
+                    <rect key="frame" x="5" y="31" width="46" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YBV-da-HdZ" secondAttribute="height" multiplier="23:18" id="S93-vs-jfD"/>
+                    </constraints>
+                    <state key="normal" image="sidebar_btn.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-f7-0Rg" userLabel="btnBack">
+                    <rect key="frame" x="5" y="31" width="46" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="WfK-lT-0Ir"/>
+                        <constraint firstAttribute="width" constant="46" id="uLY-2V-ofZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="mall_back.png">
+                        <color key="titleColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNI-OP-Wvt" userLabel="btnShare">
+                    <rect key="frame" x="330" y="31" width="40" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="share.png">
+                        <color key="titleColor" red="0.7725490196" green="0.91372549020000005" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.81568627450980391" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LP0-41-WUo" firstAttribute="bottom" secondItem="bNI-OP-Wvt" secondAttribute="bottom" id="4La-S2-EKC"/>
+                <constraint firstItem="LP0-41-WUo" firstAttribute="top" secondItem="bNI-OP-Wvt" secondAttribute="top" id="7Fk-CK-esY"/>
+                <constraint firstItem="Cxv-JH-dOM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Ahi-Ue-vXA"/>
+                <constraint firstItem="YBV-da-HdZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="KsQ-jd-P1U"/>
+                <constraint firstAttribute="trailing" secondItem="LP0-41-WUo" secondAttribute="trailing" constant="5" id="LzW-rj-M13"/>
+                <constraint firstAttribute="bottom" secondItem="Cxv-JH-dOM" secondAttribute="bottom" id="PHX-kb-hoj"/>
+                <constraint firstItem="LP0-41-WUo" firstAttribute="trailing" secondItem="bNI-OP-Wvt" secondAttribute="trailing" id="U9N-e9-iyD"/>
+                <constraint firstItem="YBV-da-HdZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="XEx-gs-FSs"/>
+                <constraint firstItem="RWB-f7-0Rg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="eYI-SL-RHg"/>
+                <constraint firstAttribute="bottom" secondItem="YBV-da-HdZ" secondAttribute="bottom" constant="8" id="epX-ps-tUp"/>
+                <constraint firstAttribute="trailing" secondItem="Cxv-JH-dOM" secondAttribute="trailing" constant="46" id="k4m-tU-9Fl"/>
+                <constraint firstItem="Cxv-JH-dOM" firstAttribute="centerY" secondItem="RWB-f7-0Rg" secondAttribute="centerY" constant="-2" id="klB-vT-LSC"/>
+                <constraint firstItem="LP0-41-WUo" firstAttribute="leading" secondItem="bNI-OP-Wvt" secondAttribute="leading" id="p75-u9-RlI"/>
+                <constraint firstItem="Cxv-JH-dOM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="46" id="vTK-Zr-XbD"/>
+                <constraint firstItem="Cxv-JH-dOM" firstAttribute="centerY" secondItem="LP0-41-WUo" secondAttribute="centerY" constant="-1" id="yDj-j1-8do"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="694.5" y="-64.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mall_back.png" width="17" height="12"/>
+        <image name="mall_right_btn.png" width="17" height="12"/>
+        <image name="share.png" width="24" height="24"/>
+        <image name="sidebar_btn.png" width="26" height="24"/>
+    </resources>
+</document>

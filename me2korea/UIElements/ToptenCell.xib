@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToptenPagerView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="ToptenCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbM-Wl-DdX" userLabel="Seperator">
+                        <rect key="frame" x="-12" y="0.0" width="344" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="m62-Ic-vma"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_blue_round.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ew6-7O-mNf">
+                        <rect key="frame" x="10" y="12" width="17" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="0J7-bc-bZR"/>
+                            <constraint firstAttribute="width" constant="17" id="fpB-0C-7Nl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k35-hd-A40" userLabel="Number">
+                        <rect key="frame" x="10" y="12" width="17" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-6P-LA8">
+                        <rect key="frame" x="35" y="3" width="39" height="39"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jRs-6P-LA8" secondAttribute="height" multiplier="1:1" id="IiH-0m-ZQ4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-rr-VCP">
+                        <rect key="frame" x="83" y="5" width="189" height="16"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JeY-rr-VCP" secondAttribute="height" multiplier="229:19" id="0kg-tB-7pB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-ws-AfG">
+                        <rect key="frame" x="83" y="27" width="189" height="12"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eBx-ws-AfG" secondAttribute="height" multiplier="229:14" id="8vu-9L-Xwa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.58039215686274503" green="0.58431372549019611" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Fd-gg-tyR">
+                        <rect key="frame" x="282" y="9" width="28" height="28"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="hpW-7F-d56"/>
+                            <constraint firstAttribute="width" constant="28" id="nY0-2B-U4L"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="eBx-ws-AfG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-40" id="6YJ-kd-sST"/>
+                    <constraint firstItem="jRs-6P-LA8" firstAttribute="top" secondItem="cbM-Wl-DdX" secondAttribute="bottom" constant="2" id="8Gu-h5-dZb"/>
+                    <constraint firstItem="Ew6-7O-mNf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="AzA-b4-aeV"/>
+                    <constraint firstItem="JeY-rr-VCP" firstAttribute="leading" secondItem="jRs-6P-LA8" secondAttribute="trailing" constant="9" id="BOv-U4-u0r"/>
+                    <constraint firstItem="Ew6-7O-mNf" firstAttribute="height" secondItem="k35-hd-A40" secondAttribute="height" id="D1l-TT-2cs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cbM-Wl-DdX" secondAttribute="trailing" constant="-20" id="DFf-V4-TEy"/>
+                    <constraint firstItem="Ew6-7O-mNf" firstAttribute="width" secondItem="k35-hd-A40" secondAttribute="width" id="Dgg-aC-gMV"/>
+                    <constraint firstItem="JeY-rr-VCP" firstAttribute="top" secondItem="cbM-Wl-DdX" secondAttribute="bottom" constant="4" id="QkV-Kw-bUy"/>
+                    <constraint firstAttribute="centerY" secondItem="4Fd-gg-tyR" secondAttribute="centerY" constant="-1" id="UEw-Gc-Gk0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Fd-gg-tyR" secondAttribute="trailing" constant="2" id="Ugv-wj-ujh"/>
+                    <constraint firstItem="eBx-ws-AfG" firstAttribute="leading" secondItem="jRs-6P-LA8" secondAttribute="trailing" constant="9" id="WvI-WS-hYu"/>
+                    <constraint firstItem="Ew6-7O-mNf" firstAttribute="top" secondItem="k35-hd-A40" secondAttribute="top" id="bLf-vh-dZ9"/>
+                    <constraint firstItem="cbM-Wl-DdX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="c1g-qb-CbZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eBx-ws-AfG" secondAttribute="bottom" constant="-4" id="cVx-bl-Wvh"/>
+                    <constraint firstItem="jRs-6P-LA8" firstAttribute="leading" secondItem="k35-hd-A40" secondAttribute="trailing" constant="8" id="fC3-wl-dBM"/>
+                    <constraint firstAttribute="centerY" secondItem="Ew6-7O-mNf" secondAttribute="centerY" constant="1" id="ihW-Qw-Bid"/>
+                    <constraint firstItem="Ew6-7O-mNf" firstAttribute="leading" secondItem="k35-hd-A40" secondAttribute="leading" id="jJ1-b7-YhX"/>
+                    <constraint firstItem="cbM-Wl-DdX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-20" id="jZI-Oq-4QI"/>
+                    <constraint firstItem="JeY-rr-VCP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-40" id="oBY-Yn-nJM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jRs-6P-LA8" secondAttribute="bottom" constant="-7" id="tbg-dj-ggq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="budgetIcon" destination="Ew6-7O-mNf" id="obA-8b-O8v"/>
+                <outlet property="labelArtist" destination="eBx-ws-AfG" id="Vnw-OB-Pjf"/>
+                <outlet property="labelRank" destination="k35-hd-A40" id="vt3-Ub-KXb"/>
+                <outlet property="labelTitle" destination="JeY-rr-VCP" id="Zqk-q8-7oU"/>
+                <outlet property="thumImage" destination="jRs-6P-LA8" id="xsc-Ob-DGy"/>
+                <outlet property="tipIcon" destination="4Fd-gg-tyR" id="4cJ-CO-QGY"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="230"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="music_blue_round.png" width="17" height="17"/>
+        <image name="play.png" width="27" height="27"/>
+    </resources>
+</document>

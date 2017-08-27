@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3DF448C-B99E-4116-B808-2297CD478D19</string>
+	<key>IDESourceControlProjectName</key>
+	<string>me2korea</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B086A49F16CA8366AB8008D73DEC6C1A4D98070</key>
+		<string>https://git.oschina.net/kimalise/me2koreaIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Code/me2korea.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B086A49F16CA8366AB8008D73DEC6C1A4D98070</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://git.oschina.net/kimalise/me2koreaIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B086A49F16CA8366AB8008D73DEC6C1A4D98070</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B086A49F16CA8366AB8008D73DEC6C1A4D98070</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
